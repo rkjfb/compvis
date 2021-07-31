@@ -1,2 +1,8 @@
 from PIL import Image
-im = Image.open('..\\bookdata\\empire.jpg')
+import matplotlib.pyplot as plt
+import numpy as np
+
+im = np.asarray(Image.open('..\\bookdata\\empire.jpg'))
+
+plt.imshow(im)
+plt.show()
